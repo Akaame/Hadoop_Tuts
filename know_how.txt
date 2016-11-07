@@ -65,6 +65,9 @@ https://nerdslearning.wordpress.com/2012/12/04/building-linear-regression-with-m
 https://www.mapr.com/blog/hadoop-and-genome-sequencing-perfect-match
 http://www.ibm.com/developerworks/library/ba-sentiment-analysis-big-data/index.html
 http://blog.cloudera.com/blog/2012/09/analyzing-twitter-data-with-hadoop/
+http://www.cyberciti.biz/faq/bash-loop-over-file/
+http://aadrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html
+http://www.thegeekstuff.com/2009/09/the-ultimate-wget-download-guide-with-15-awesome-examples/
 
 Data sources
 

@@ -4,7 +4,7 @@
 g_tmp_folder="ncdc_tmp";
 g_output_folder="ncdc_data";
 
-g_remote_host="ftp3.ncdc.noaa.gov";
+g_remote_host="ftp.ncdc.noaa.gov";
 g_remote_path="pub/data/noaa";
 
 
