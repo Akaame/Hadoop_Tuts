@@ -38,6 +38,7 @@ Intellij -> file-> new -> from rep
 -> then add them as library
 -> add them to dependencies  in modules->dependencies tab
 -> set an output path in modules->paths tab
+-> update .gitignore
 -> in your edit conf dont forget to say use classpath of module
 
 You may now compile and run locally dont forget to change your input output in edit conf
@@ -49,3 +50,22 @@ Add project structure->artifact add artifacts with dependencies using current mo
 -> under build go build artifacts
 
 Running on cluster:
+
+
+
+Useful sources
+
+https://www.researchgate.net/post/Can_anyone_suggest_some_ideas_a_minor_project_using_Hadoop_And_MapReduce
+http://blog.matthewrathbone.com/2013/04/17/what-is-hadoop.html
+https://lendap.wordpress.com/2015/02/16/matrix-multiplication-with-mapreduce/
+http://stackoverflow.com/questions/11803450/join-of-two-datasets-in-mapreduce-hadoop
+http://arifn.web.id/blog/2012/05/15/programming-hadoop-in-eclipse.html
+http://www.ithinkcloud.com/tutorials/hadoop-mapreduce-inverted-index/
+https://nerdslearning.wordpress.com/2012/12/04/building-linear-regression-with-mapreduce-on-hadoop/
+https://www.mapr.com/blog/hadoop-and-genome-sequencing-perfect-match
+http://www.ibm.com/developerworks/library/ba-sentiment-analysis-big-data/index.html
+http://blog.cloudera.com/blog/2012/09/analyzing-twitter-data-with-hadoop/
+
+Data sources
+
+national climatic data centre ncdc.noaa.gov https://gist.github.com/Alexander-Ignatyev/6478289

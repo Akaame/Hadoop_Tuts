@@ -1,3 +1,7 @@
 out/
 hadoop_first/src/tmp/
 hadoop_first/libs
+hadoopweather_tomwhite/libs
+hadoopweather_tomwhite/src/tmp
+hadoopweather_tomwhite/data/ncdc_data
+hadoopweather_tomwhite.iml
