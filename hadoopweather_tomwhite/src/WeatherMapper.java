@@ -18,7 +18,8 @@ public class WeatherMapper extends Mapper<LongWritable,Text,Text,IntWritable> {
     protected void map(LongWritable key, Text value, Context context) throws IOException,InterruptedException{
         String strkeyout = value.toString().substring(15,19); // parse date
         String strvalueout = value.toString().substring(87,92); // parse temp
-        String quality = value.toString().substring(93,94);
+        String quality = value.toString().substring(92,93);
+
         int sign = strvalueout.charAt(0) != '-' ? -1 :1;
         int val = sign * Integer.parseInt(strvalueout.substring(1,5)); // further parse temp
 

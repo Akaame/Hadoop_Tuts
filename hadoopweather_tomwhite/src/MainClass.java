@@ -32,7 +32,10 @@ public class MainClass extends Configured implements Tool{
         j.setMapOutputKeyClass(Text.class);
         j.setMapOutputValueClass(IntWritable.class);
 
-        return j.waitForCompletion(true) ? 1 : 0;
+        j.setOutputKeyClass(Text.class);
+        j.setOutputValueClass(IntWritable.class);
+
+        return j.waitForCompletion(true) ? 0 : 1;
     }
 
     public static void main(String[] args) throws Exception{

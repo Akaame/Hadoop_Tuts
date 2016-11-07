@@ -7,9 +7,10 @@ import java.io.IOException;
 /**
  * Created by sddk on 07.11.2016.
  */
-public class MaxReducer extends Reducer<Text,Iterable<IntWritable>,Text,IntWritable>{
+public class MaxReducer extends Reducer<Text,IntWritable,Text,IntWritable>{
     private Text date = new Text();
     private IntWritable maxima = new IntWritable();
+
     public void reduce(Text key,Iterable<IntWritable> values,Context context) throws IOException,InterruptedException{
         // keys are dates
         // value is an integer array
@@ -20,7 +21,6 @@ public class MaxReducer extends Reducer<Text,Iterable<IntWritable>,Text,IntWrita
                 max = temp;
             }
         }
-
         date.set(key);
         maxima.set(max);
 
