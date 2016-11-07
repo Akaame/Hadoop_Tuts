@@ -1,0 +1,51 @@
+Creating dev environment:
+Download hadoop
+Download java if you dont have
+find java libraries at user/local
+find java binaries  by which javac
+get openssh-server
+create a dedicated hadoop user
+-> sudo addgroup
+-> sudo adduser --ingroup:
+
+change into hadoop user
+
+run ssh-keygen -t rsa -P "" for empty password
+check ssh localhost
+
+untar hadoop
+
+-> append hadoop user ./.bashrc
+ JAVA_HOME=java lib folder and  HADOOP_HOME= hadoop installation folder
+ and add java binaries to path
+
+ set java home in hadoop-env.sh in etc
+
+ change core-site hdfs-site mapred-site accordingly
+ can get changes from google
+
+ hadoop namenode -format to format new dfs
+ then start-all.sh
+
+ web interface is on localhost:50070
+
+
+Starting a new project:
+
+Create gitrep
+Intellij -> file-> new -> from rep
+-> create a folder in your project and copy all jar file inside hadoop/share
+-> then add them as library
+-> add them to dependencies  in modules->dependencies tab
+-> set an output path in modules->paths tab
+-> in your edit conf dont forget to say use classpath of module
+
+You may now compile and run locally dont forget to change your input output in edit conf
+
+Creating a jar file:
+
+Add project structure->artifact add artifacts with dependencies using current module and current main
+-> then select second option and select a manifest file
+-> under build go build artifacts
+
+Running on cluster:

@@ -2,6 +2,7 @@
  * Created by sddk on 07.11.2016.
  */
 
+import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
@@ -19,9 +20,11 @@ import org.apache.hadoop.util.ToolRunner;
 public class WordcountJob extends Configured implements Tool{
     @Override
     public int run(String[] args) throws Exception{
-        Job job = new Job(getConf());
-        job.setJarByClass(getClass());
-        job.setJobName(getClass().getSimpleName());
+        Configuration conf = new Configuration();
+
+        Job job = new Job(conf,"WordcountJob");
+        job.setJarByClass(WordcountJob.class);
+        //job.setJobName(getClass().getSimpleName());
 
         FileInputFormat.addInputPath(job,new Path(args[0]));
         FileOutputFormat.setOutputPath(job,new Path(args[1]));
